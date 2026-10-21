@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: 17 }
       - run: npm install
-      - run: npm run prebuild
+      - run: mkdir -p dist && cp index.html manifest.json sw.js dist/ && (cp icon-192.png icon-512.png dist/ || true)
       - run: npx cap add android
       - run: npx cap sync android
       - run: chmod +x android/gradlew && cd android && ./gradlew assembleDebug
