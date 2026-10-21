@@ -2,6 +2,9 @@
   "name": "mafia-app",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "prebuild": "mkdir -p dist && cp index.html manifest.json sw.js icon-192.png icon-512.png dist/"
+  },
   "dependencies": {
     "@capacitor/android": "^6.1.0",
     "@capacitor/cli": "^6.1.0",
