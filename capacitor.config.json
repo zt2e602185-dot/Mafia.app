@@ -1,6 +1,6 @@
 {
   "appId": "com.mafia.game",
   "appName": "لعبة المافيا",
-  "webDir": "www",
+  "webDir": "dist" ,
   "backgroundColor": "#0d0a18"
 }
